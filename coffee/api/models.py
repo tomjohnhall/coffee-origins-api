@@ -7,10 +7,19 @@ from django.dispatch import receiver
 # Create your models here.
 
 class Coffee(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField()
-    location = JSONField()
-    images = JSONField()
+    name = models.CharField(max_length=255, default='')
+    type = models.CharField(max_length=255, default='')
+    roaster = models.CharField(max_length=255, default='')
+    country = models.CharField(max_length=255, default='')
+    region = models.CharField(max_length=255, blank=True)
+    grower = models.CharField(max_length=255, blank=True)
+    process = models.CharField(max_length=255, blank=True)
+    tasting = JSONField(null=True)
+    shopURL = models.URLField(max_length=255, blank=True)
+    last_in = models.DateTimeField(null=True)
+    next_in = models.DateTimeField(null=True)
+    location = JSONField(null=True)
+    images = JSONField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
