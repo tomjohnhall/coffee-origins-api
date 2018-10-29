@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -157,3 +158,5 @@ ACCOUNT_AUTHENTICATION_METHOD="username_email"
 ACCOUNT_EMAIL_SUBJECT_PREFIX="Brew Cross"
 ACCOUNT_ADAPTER = 'api.adapter.DefaultAccountAdapterCustom'
 URL_FRONT = os.environ.get('FRONTEND_URL')
+
+django_heroku.settings(locals())
