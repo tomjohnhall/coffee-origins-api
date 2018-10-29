@@ -1,1 +1,1 @@
-web: gunicorn coffee/coffee.wsgi
+web: gunicorn --pythonapp coffee coffee.wsgi
