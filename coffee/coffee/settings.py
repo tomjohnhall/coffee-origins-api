@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brew-cross-api.herokuapp.com']
 
 
 # Application definition
@@ -131,10 +131,12 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
+    'brew-cross-api.herokuapp.com'
 )
 
 CSRF_TRUSTED_ORIGINS = (
     'localhost:3000',
+    'brew-cross-api.herokuapp.com'
 )
 
 SITE_ID = 1

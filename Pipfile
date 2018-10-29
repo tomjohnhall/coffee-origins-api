@@ -12,6 +12,7 @@ django-cors-headers = "*"
 django-allauth = "*"
 django-heroku = "*"
 "urllib3" = "*"
+gunicorn = "*"
 
 [dev-packages]
 
