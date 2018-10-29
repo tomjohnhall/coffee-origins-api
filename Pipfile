@@ -7,6 +7,11 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 jsonfield = "*"
+django-rest-auth = "*"
+django-cors-headers = "*"
+django-allauth = "*"
+django-heroku = "*"
+"urllib3" = "*"
 
 [dev-packages]
 
