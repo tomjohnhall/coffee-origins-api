@@ -13,6 +13,7 @@ django-allauth = "*"
 django-heroku = "*"
 "urllib3" = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
