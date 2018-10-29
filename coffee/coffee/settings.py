@@ -87,11 +87,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'CONN_MAX_AGE': 500
     }
 }
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config(conn_max_age=500, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=500, ssl_require=True)
 
 
 
@@ -136,12 +137,14 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
-    'brew-cross-api.herokuapp.com'
+    'https://brew-cross.herokuapp.com/',
+    'http://brew-cross.herokuapp.com/',
 )
 
 CSRF_TRUSTED_ORIGINS = (
     'localhost:3000',
-    'brew-cross-api.herokuapp.com'
+    'https://brew-cross.herokuapp.com',
+    'http://brew-cross.herokuapp.com/',
 )
 
 SITE_ID = 1
