@@ -156,4 +156,4 @@ REST_FRAMEWORK = {
 ACCOUNT_AUTHENTICATION_METHOD="username_email"
 ACCOUNT_EMAIL_SUBJECT_PREFIX="Brew Cross"
 ACCOUNT_ADAPTER = 'api.adapter.DefaultAccountAdapterCustom'
-URL_FRONT = 'http://localhost:3000/'
+URL_FRONT = os.environ.get('FRONTEND_URL')
