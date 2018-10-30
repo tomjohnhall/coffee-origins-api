@@ -137,14 +137,14 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
-    'https://brew-cross.herokuapp.com/',
-    'http://brew-cross.herokuapp.com/',
+    'brew-cross.herokuapp.com',
+    'brew-cross.herokuapp.com',
 )
 
 CSRF_TRUSTED_ORIGINS = (
     'localhost:3000',
-    'https://brew-cross.herokuapp.com',
-    'http://brew-cross.herokuapp.com/',
+    'brew-cross.herokuapp.com',
+    'brew-cross.herokuapp.com',
 )
 
 SITE_ID = 1
