@@ -150,7 +150,7 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = os.environ.get('SENDGRID_SERVER')
+EMAIL_HOST = os.environ.get('SENDGRID_HOST')
 EMAIL_PORT = os.environ.get('SENDGRID_PORT')
 EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
 EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
